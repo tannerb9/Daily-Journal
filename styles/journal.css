@@ -1,0 +1,24 @@
+body {
+  box-sizing: border-box;
+  width: 500px;
+}
+
+section div {
+  border: 0.5px solid;
+  padding: 10px;
+  margin: 1px;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+}
+
+div:last-of-type {
+  border: 0;
+  width: 30%;
+}
+
+textarea {
+  resize: vertical;
+}
