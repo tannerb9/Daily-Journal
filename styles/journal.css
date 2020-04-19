@@ -1,15 +1,16 @@
 body {
   box-sizing: border-box;
   width: 500px;
+  border: 0.5px solid;
+}
+
+h1 {
+  text-align: center;
 }
 
 section div {
-  border: 0.5px solid;
   padding: 10px;
   margin: 1px;
-}
-
-section div {
   display: flex;
   flex-direction: column;
 }
@@ -21,4 +22,14 @@ div:last-of-type {
 
 textarea {
   resize: vertical;
+}
+
+#moodForTheDay {
+  align-self: flex-start;
+  justify-self: flex-end;
+  max-width: 30%;
+}
+
+#journalDate {
+  max-width: 30%;
 }
