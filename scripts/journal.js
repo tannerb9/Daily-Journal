@@ -1,8 +1,8 @@
 fetch("http://localhost:8088/entries")
-  .then((entries) => entries.json)
-  .then((entries) => {
-    const entry = makeJournalEntryComponent(entries);
-    renderJournalEntries(entry);
+  .then((entries) => entries.json())
+  .then((parsedEntry) => {
+    console.table(parsedEntry);
+    renderJournalEntries(parsedEntry);
   });
 
 const makeJournalEntryComponent = (journal) => {
@@ -14,9 +14,9 @@ const makeJournalEntryComponent = (journal) => {
   `;
 };
 
-const renderJournalEntries = (journalEntries) => {
-  for (item of journalEntries) {
-    let entryLog = document.querySelector(".entryLog");
-    entryLog.innerHTML += makeJournalEntryComponent(item);
+const renderJournalEntries = (entries) => {
+  for (let index = 0; index < entries.length; index++) {
+    let record = document.querySelector(".entryLog");
+    record.innerHTML += makeJournalEntryComponent(entries[index]);
   }
 };
