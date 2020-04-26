@@ -1,7 +1,8 @@
-fetch("http:localhost:3000") // Fetch from the API
-  .then((entries) => entries.json) // Parse as JSON
+fetch("http://localhost:8088/entries")
+  .then((entries) => entries.json)
   .then((entries) => {
-    // What should happen when we finally have the array?
+    const entry = makeJournalEntryComponent(entries);
+    renderJournalEntries(entry);
   });
 
 const makeJournalEntryComponent = (journal) => {
@@ -13,11 +14,9 @@ const makeJournalEntryComponent = (journal) => {
   `;
 };
 
-const renderJournalEntries = (JournalEntries) => {
-  for (item of entries) {
+const renderJournalEntries = (journalEntries) => {
+  for (item of journalEntries) {
     let entryLog = document.querySelector(".entryLog");
     entryLog.innerHTML += makeJournalEntryComponent(item);
   }
 };
-
-renderJournalEntries(entries);
