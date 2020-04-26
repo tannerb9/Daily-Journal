@@ -1,19 +1,8 @@
-const entries = [
-  {
-    date: "03/27/20",
-    concepts_covered: "Flexbox",
-    briefing:
-      "Intro to flexbox. Learned about parent and child containers. Properties placed on parent container affect whole container, while props on child containers only affect targeted child.",
-    mood: "Dazed & Confused",
-  },
-  {
-    date: "04/16/20",
-    concepts_covered: "Javascript",
-    briefing:
-      "Intro to javascript. Realized it's an OOPL, like Python. Annoyed it defines a container as 'object' when everything in javascript is considered an object.",
-    mood: "Annoyed",
-  },
-];
+fetch("http:localhost:3000") // Fetch from the API
+  .then((entries) => entries.json) // Parse as JSON
+  .then((entries) => {
+    // What should happen when we finally have the array?
+  });
 
 const makeJournalEntryComponent = (journal) => {
   return `
