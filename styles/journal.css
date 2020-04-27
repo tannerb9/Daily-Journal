@@ -1,11 +1,18 @@
+body {
+  /* text-align: center; */
+}
+
 form {
   box-sizing: border-box;
   width: 500px;
+  margin: auto;
   border: 0.5px solid;
 }
 
-h1 {
+form h1 {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 section div {
@@ -32,4 +39,10 @@ textarea {
 
 #journalDate {
   max-width: 30%;
+}
+
+article {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
 }
