@@ -6,3 +6,5 @@ const makeJournalEntryComponent = (journal) => {
   <p class="briefings">${journal.briefing}</p>
   `;
 };
+
+export default makeJournalEntryComponent;
