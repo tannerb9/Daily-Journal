@@ -9,45 +9,43 @@
   <body>
     <section>
       <form action="">
-        <h1>Daily Journal</h1>
-        <div>
-          <label for="journalDate">Date of Entry</label>
-          <input type="date" name="journalDate" id="journalDate" />
-        </div>
-        <div>
-          <label for="conceptsCovered">Concepts Covered</label>
-          <input type="text" name="conceptsCovered" id="conceptsCovered" />
-        </div>
-        <div>
-          <label for="journalEntry">Journal Entry</label>
-          <textarea
-            name="journalEntry"
-            id="journalEntry"
-            cols="20"
-            rows="2"
-          ></textarea>
-        </div>
-        <div>
-          <label for="moodForTheDay">Mood for the Day</label>
-          <select name="moodForTheDay" id="moodForTheDay">
-            <option value="Pleased">Pleased</option>
-            <option value="Displeased">Displeased</option>
-            <option value="Overwhelmed">Overwhelmed</option>
-            <option value="Encouraged">Encouraged</option>
-            <option value="Discouraged">Discouraged</option>
-            <option value="Dazed & Confused">Dazed & Confused</option>
-            <option value="Annoyed">Annoyed</option>
-            <option value="Tranquil">Tranquil</option>
-          </select>
-        </div>
-        <div>
-          <input type="submit" value="Record Journal Entry" />
-        </div>
+      <h1>Daily Journal</h1>
+      <div>
+        <label for="journalDate">Date of Entry</label>
+        <input type="date" name="journalDate" id="journalDate" />
+      </div>
+      <div>
+        <label for="conceptsCovered">Concepts Covered</label>
+        <input type="text" name="conceptsCovered" id="conceptsCovered" />
+      </div>
+      <div>
+        <label for="journalEntry">Journal Entry</label>
+        <textarea
+          name="journalEntry"
+          id="journalEntry"
+          cols="20"
+          rows="2"
+        ></textarea>
+      </div>
+      <div>
+        <label for="moodForTheDay">Mood for the Day</label>
+        <select name="moodForTheDay" id="moodForTheDay">
+          <option value="Pleased">Pleased</option>
+          <option value="Displeased">Displeased</option>
+          <option value="Overwhelmed">Overwhelmed</option>
+          <option value="Encouraged">Encouraged</option>
+          <option value="Discouraged">Discouraged</option>
+          <option value="Dazed & Confused">Dazed & Confused</option>
+          <option value="Annoyed">Annoyed</option>
+          <option value="Tranquil">Tranquil</option>
+        </select>
+      </div>
+      <div>
+        <button id="submitButton">Submit</button>
+      </div>
     </section>
     </form>
-    <article class="entryLog">
-
-    </article>
+    <article class="entryLog"></article>
     <script type="module" src="scripts/journal.js"></script>
   </body>
 </html>

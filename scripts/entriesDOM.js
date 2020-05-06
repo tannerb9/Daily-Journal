@@ -1,4 +1,5 @@
 import makeJournalEntryComponent from "./entryComponent.js";
+// import API from "./data.js";
 
 const renderJournalEntries = (entries) => {
   for (let index = 0; index < entries.length; index++) {
