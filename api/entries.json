@@ -2,17 +2,31 @@
   "entries": [
     {
       "id": 1,
-      "date": "03/27/20",
+      "date": "2020-03-27",
       "concepts": "Flexbox",
       "journal": "Intro to flexbox. Learned about parent and child containers. Properties placed on parent container affect whole container, while props on child containers only affect targeted child.",
       "mood": "Dazed & Confused"
     },
     {
       "id": 2,
-      "date": "04/16/20",
+      "date": "2020-04-16",
       "concepts": "Javascript",
       "journal": "Intro to javascript. Realized it's an OOPL, like Python. Annoyed it defines a container as 'object' when everything in javascript is considered an object.",
       "mood": "Annoyed"
+    },
+    {
+      "date": "2020-05-05",
+      "concepts": "Factory Functions",
+      "journal": "Factory function: a function that returns an object.",
+      "mood": "Tranquil",
+      "id": 3
+    },
+    {
+      "date": "2020-05-06",
+      "concepts": "Array Methods",
+      "journal": "Covered some basic built-in functions(methods) for arrays. Explained how a function can be passed a function as an argument.",
+      "mood": "Tranquil",
+      "id": 4
     }
   ]
 }
