@@ -3,11 +3,28 @@ form {
   width: 500px;
   margin: auto;
   border: 0.5px solid;
+  margin-bottom: 15px;
 }
 
 form h1 {
   text-align: center;
   font-size: 1.5em;
+}
+
+article h1.concepts {
+  margin-bottom: 0px;
+}
+
+article > p.dates {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-family: Times New Roman, Helvetica, sans-serif;
+}
+article > p.moods {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 500;
 }
 
 section div {
@@ -40,4 +57,26 @@ article {
   text-align: center;
   max-width: 50%;
   margin: auto;
+}
+
+fieldset {
+  border: none;
+  border: 0.5px black solid;
+  width: 472px;
+  margin: auto;
+}
+
+fieldset > div {
+  display: flex;
+  flex-flow: row;
+}
+
+fieldset > div > label {
+  margin-right: 8px;
+}
+
+legend {
+  margin: auto;
+  font-weight: 700;
+  font-size: 1.1em;
 }

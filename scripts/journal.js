@@ -34,6 +34,19 @@ document.querySelector("#submitButton").addEventListener("click", (event) => {
   }
 });
 
+// TODO: Add click event listener to moods filter buttons
+// TODO: Fetch entries with mood selected
+// TODO: Render fetched entries to DOM
+
+document.getElementsByName("moods").forEach((mood) =>
+  mood.addEventListener("click", (event) => {
+    const mood = event.target.value;
+    API.filteredJournalEntries(mood).then((entries) =>
+      renderJournalEntries(entries)
+    );
+  })
+);
+
 const createJournalEntry = (date, concepts, journal, mood) => ({
   date: date,
   concepts: concepts,
