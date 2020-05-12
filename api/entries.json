@@ -1,18 +1,18 @@
 {
   "entries": [
     {
-      "id": 1,
       "date": "2020-03-27",
       "concepts": "Flexbox",
       "journal": "Intro to flexbox. Learned about parent and child containers. Properties placed on parent container affect whole container, while props on child containers only affect targeted child.",
-      "mood": "Overwhelmed"
+      "mood": "Overwhelmed",
+      "id": 1
     },
     {
-      "id": 2,
       "date": "2020-04-16",
       "concepts": "Javascript",
       "journal": "Intro to javascript. Realized it's an OOPL, like Python. Annoyed it defines a container as 'object' when everything in javascript is considered an object.",
-      "mood": "Meh"
+      "mood": "Meh",
+      "id": 2
     },
     {
       "date": "2020-05-05",
@@ -34,6 +34,20 @@
       "journal": "Lab day. Completed the practices of Book3's Ch5 and Ch6 without much difficulty.",
       "mood": "Encouraged",
       "id": 5
+    },
+    {
+      "date": "2020-05-11",
+      "concepts": "Delete & Put",
+      "journal": "Implemented these methods for json server communication to alter journal entries. ",
+      "mood": "Encouraged",
+      "id": 6
+    },
+    {
+      "date": "2020-05-12",
+      "concepts": "Entity Relationship Diagram",
+      "journal": "Introduced to relationship structuring that coincides with flat data. One to one relationships are rare. Sort how to relate data before starting to avoid having to recode later. Collection's id used as reference(foreign key) to relate to other entities. Use expand when searching for many-to-one relationship and embed for one-to-many relationship.",
+      "mood": "Tranquil",
+      "id": 7
     }
   ]
 }

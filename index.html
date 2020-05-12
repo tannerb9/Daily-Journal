@@ -8,7 +8,7 @@
   </head>
   <body>
     <section>
-      <form action="">
+      <form action="" class="form">
         <h1>Daily Journal</h1>
         <div>
           <label for="journalDate">Date of Entry</label>
@@ -57,7 +57,48 @@
         <label for="mood6">Meh</label>
       </div>
     </fieldset>
-    <article class="entryLog"></article>
+
+    <section>
+      <form action="" id="editForm" class="form">
+        <input type="hidden" id="entryId" value="" />
+
+        <h1>Edit Entry</h1>
+        <div>
+          <label for="journalDate">Date of Entry</label>
+          <input type="date" name="journalDate" id="editDate" />
+        </div>
+        <div>
+          <label for="conceptsCovered">Concepts Covered</label>
+          <input type="text" name="conceptsCovered" id="editConcepts" />
+        </div>
+        <div>
+          <label for="journalEntry">Journal Entry</label>
+          <textarea
+            name="journalEntry"
+            id="editJournal"
+            cols="20"
+            rows="2"
+          ></textarea>
+        </div>
+        <div>
+          <label for="moodForTheDay">Mood for the Day</label>
+          <select name="moodForTheDay" id="editMood">
+            <option value="Tranquil">Tranquil</option>
+            <option value="Overwhelmed">Overwhelmed</option>
+            <option value="Encouraged">Encouraged</option>
+            <option value="Discouraged">Discouraged</option>
+            <option value="Meh">Meh</option>
+          </select>
+        </div>
+        <button type="submit" id="submitBtn">Submit Changes</button>
+        <button type="submit" id="cancelBtn">
+          Cancel
+        </button>
+        <button type="submit" id="deleteBtn">Delete Entry</button>
+      </form>
+    </section>
+    <article id="entryContainer" class="entryLog"></article>
+
     <script type="module" src="scripts/journal.js"></script>
   </body>
 </html>

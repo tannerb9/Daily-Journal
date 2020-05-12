@@ -1,4 +1,4 @@
-form {
+.form {
   box-sizing: border-box;
   width: 500px;
   margin: auto;
@@ -11,6 +11,7 @@ form h1 {
   font-size: 1.5em;
 }
 
+/* Dom renderings */
 article h1.concepts {
   margin-bottom: 0px;
 }
@@ -27,6 +28,13 @@ article > p.moods {
   font-weight: 500;
 }
 
+article {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+
+/* Form components */
 section div {
   padding: 10px;
   margin: 1px;
@@ -53,12 +61,7 @@ textarea {
   max-width: 30%;
 }
 
-article {
-  text-align: center;
-  max-width: 50%;
-  margin: auto;
-}
-
+/* Filtered search box */
 fieldset {
   border: none;
   border: 0.5px black solid;
@@ -79,4 +82,15 @@ legend {
   margin: auto;
   font-weight: 700;
   font-size: 1.1em;
+}
+
+/* edit form */
+#editForm {
+  display: none;
+  background-color: lightgray;
+  border: 0.5px solid black;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
