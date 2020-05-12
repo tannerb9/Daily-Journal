@@ -1,5 +1,4 @@
 import makeJournalEntryComponent from "./entryComponent.js";
-// import API from "./data.js";
 
 const renderJournalEntries = (entries) => {
   let record = document.querySelector(".entryLog");
