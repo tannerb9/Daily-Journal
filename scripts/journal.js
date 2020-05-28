@@ -63,6 +63,25 @@ const conceptsInput = document.querySelector("#editConcepts");
 const dateInput = document.querySelector("#editDate");
 const moodInput = document.querySelector("#editMood");
 const journalInput = document.querySelector("#editJournal");
+const searchInput = document.querySelector(".searchBox");
+const searchBox = document.querySelector("#searchBox");
+
+searchBox.addEventListener("keypress", (keyPressEvent) => {
+  if (keyPressEvent.charCode == 13) {
+    let searchEntries = new Set();
+    const term = searchInput.value.toLowerCase();
+    API.getJournalEntries().then((entries) => {
+      entries.forEach((entry) => {
+        Object.values(entry).forEach(info => {
+          if (info.toString().toLowerCase().includes(`${term}`)) {
+            searchEntries.add(entry);
+          }
+        })
+      });
+      renderJournalEntries(searchEntries);
+    });
+  }
+});
 
 function prepopulateForm(entry) {
   conceptsInput.value = entry.concepts;

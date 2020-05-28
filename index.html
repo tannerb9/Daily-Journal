@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/journal.css" />
   </head>
   <body>
-    <section>
+    <section class="formSection">
       <form action="" class="form">
         <h1>Daily Journal</h1>
         <div>
@@ -42,23 +42,35 @@
         </div>
       </form>
     </section>
-    <fieldset>
-      <legend>Filter Entries By Mood</legend>
-      <div>
-        <input type="radio" name="moods" id="mood1" value="tranquil" />
-        <label for="mood1">Tranquil</label>
-        <input type="radio" name="moods" id="mood3" value="encouraged" />
-        <label for="mood3">Encouraged</label>
-        <input type="radio" name="moods" id="mood4" value="discouraged" />
-        <label for="mood4">Discouraged</label>
-        <input type="radio" name="moods" id="mood5" value="overwhelmed" />
-        <label for="mood5">Overwhelmed</label>
-        <input type="radio" name="moods" id="mood6" value="meh" />
-        <label for="mood6">Meh</label>
-      </div>
-    </fieldset>
 
-    <section>
+    <section class="searchContainer">
+      <fieldset class="box">
+        <legend>Filter Entries By Mood</legend>
+        <div>
+          <input type="radio" name="moods" id="mood1" value="tranquil" />
+          <label for="mood1">Tranquil</label>
+          <input type="radio" name="moods" id="mood3" value="encouraged" />
+          <label for="mood3">Encouraged</label>
+          <input type="radio" name="moods" id="mood4" value="discouraged" />
+          <label for="mood4">Discouraged</label>
+          <input type="radio" name="moods" id="mood5" value="overwhelmed" />
+          <label for="mood5">Overwhelmed</label>
+          <input type="radio" name="moods" id="mood6" value="meh" />
+          <label for="mood6">Meh</label>
+        </div>
+      </fieldset>
+      <fieldset id="searchBox" class="box">
+        <legend>Search Entries By Term</legend>
+        <input
+          type="text"
+          class="searchBox"
+          value=""
+          placeholder="Enter Search Term"
+        />
+      </fieldset>
+    </section>
+
+    <section class="editFormSection">
       <form action="" id="editForm" class="form">
         <input type="hidden" id="entryId" value="" />
 
@@ -97,6 +109,7 @@
         <button type="submit" id="deleteBtn">Delete Entry</button>
       </form>
     </section>
+
     <article id="entryContainer" class="entryLog"></article>
 
     <script type="module" src="scripts/journal.js"></script>
