@@ -35,7 +35,7 @@ article {
 }
 
 /* Form components */
-section div {
+section.formSection div {
   padding: 10px;
   margin: 1px;
   display: flex;
@@ -61,21 +61,29 @@ textarea {
   max-width: 30%;
 }
 
-/* Filtered search box */
-fieldset {
+/* Search container */
+section.searchContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Filtered & search box */
+fieldset.box {
   border: none;
   border: 0.5px black solid;
-  width: 472px;
-  margin: auto;
+  width: 40%;
 }
 
-fieldset > div {
+fieldset.box > div {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
 }
 
-fieldset > div > label {
-  margin-right: 8px;
+#searchBox > input {
+  width: 100%;
+  text-align: center;
 }
 
 legend {

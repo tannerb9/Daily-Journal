@@ -31,6 +31,9 @@ const API = {
       method: "DELETE",
     });
   },
+  // searchTermInEntries(term) {
+  //   return fetch(`${apiUrl}?q=${term}`).then((entries) => entries.json());
+  // },
 };
 
 export default API;
